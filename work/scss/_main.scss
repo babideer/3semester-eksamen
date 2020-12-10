@@ -1,0 +1,110 @@
+body{
+    font-family: Lato, sans-serif;
+}
+#wrapper{
+    background-color: $myblack;
+    color: whitesmoke;
+    font-family: Stencil Std, fantasy;
+    max-width:1800px;
+    margin: 0 auto;
+    height: auto;
+    #indexinfo{
+        padding-top: 100px;
+        text-align: $aligncenter;
+    }
+}
+h1, h2{
+    text-align:$aligncenter;
+    font-size: 2em;
+}
+p{
+   font-size: 2em;
+}
+//Navbar
+    .navbar-nav{
+        padding-left:10px;
+    }
+    .nav-item{
+    font-size: $mynavfont;
+    }
+
+//Index
+//Header
+    h2.title {
+        font-weight: 800;
+        font-size: 3em;
+    }
+    .caption {
+        text-align: center;
+    }
+    .header {
+        position: relative;
+        width: 100vw;
+        height: 500px;
+        margin-bottom: 60px;
+        .indexbtn{
+            margin-top: 100px;
+        }
+    }
+    .center {
+        position: absolute;
+        top: $half;
+        left: $half;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+    #background {
+        background-image:url("images/frontpic.jpg"); 
+        background-size: cover;
+        background-position: center;
+    }
+
+//Register and login
+    .btn {
+        border: 4px;
+    }
+    .inputcon{
+        background-color: rgba(155,155,155,0.4);
+        background-blend-mode: lighten;
+        height: 5px;
+    }
+
+//Footer
+    .footer{
+        padding: $fifty;
+        background-color: #313131;
+        margin-top: $fifty;
+        font-family: lato;
+    }
+//Tilegame
+#ghostback{
+    background-image:url("images/gameback.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    #scorecol, #loggedin{
+        background-image: linear-gradient(to right, #c9c9c9, #acb2ba, #879ea6, #648b89, #517662);
+        border: 5px solid $myblack; 
+        height: 300px;
+        color: $myblack;
+    }
+    #canvas{
+        border: 8px solid $myblack; 
+        position: relative;
+    }
+
+//Media 
+@media (min-width: 850px) {
+    h1{
+        font-size: 3em;
+        text-align: $aligncenter;
+    }
+    h2 {
+        font-size: 3em;
+        text-align: $aligncenter;
+    }
+    p{
+        font-size: $onehalf;
+    }
+}
